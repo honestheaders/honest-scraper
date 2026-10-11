@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Honest Scraper</title>
+  <link rel="stylesheet" href="scraper.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <img src="icons/icon32.png" width="20" height="20" alt="">
+      <span>Honest Scraper</span>
+    </div>
+    <div class="site" id="site"></div>
+  </header>
+
+  <div id="banner" class="banner" hidden></div>
+  <div id="toast" class="toast" hidden></div>
+
+  <main id="main">
+    <section class="row">
+      <button class="primary" id="pick" data-i18n="pick"></button>
+      <span class="hint" id="pickHint" data-i18n="pickHint"></span>
+    </section>
+
+    <section class="picked" id="pickedBox" hidden>
+      <span class="label" data-i18n="pickedLabel"></span>
+      <code id="pickedXp"></code>
+      <button id="copyPicked" data-i18n="copy"></button>
+    </section>
+
+    <section class="field">
+      <label for="rows" data-i18n="rowsLabel"></label>
+      <div class="row">
+        <input id="rows" spellcheck="false" autocomplete="off" data-i18n-placeholder="rowsPlaceholder">
+        <span id="count" class="count"></span>
+      </div>
+      <p class="err" id="rowsErr" hidden></p>
+    </section>
+
+    <section class="field">
+      <div class="row between">
+        <span class="label" data-i18n="columnsLabel"></span>
+        <button id="addCol" data-i18n="addColumn"></button>
+      </div>
+      <div id="columns" class="columns"></div>
+      <p class="hint" data-i18n="columnsHint"></p>
+    </section>
+
+    <section class="row">
+      <button class="primary" id="scrape" data-i18n="scrape"></button>
+      <select id="exportSel" aria-label="Export">
+        <option value="" data-i18n="exportMenu"></option>
+        <option value="tsv" data-i18n="exportTsv"></option>
+        <option value="csv" data-i18n="exportCsv"></option>
+        <option value="json" data-i18n="exportJson"></option>
+        <option value="csvFile" data-i18n="exportCsvFile"></option>
+      </select>
+      <span id="resultInfo" class="hint"></span>
+    </section>
+
+    <section class="results">
+      <table id="table"></table>
+      <p class="hint empty" id="empty" data-i18n="empty"></p>
+    </section>
+  </main>
+
+  <footer class="bottom">
+    <span class="trust" data-i18n="trust"></span>
+  </footer>
+  <script type="module" src="scraper.js"></script>
+</body>
+</html>

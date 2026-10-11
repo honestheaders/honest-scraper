@@ -1,0 +1,87 @@
+:root {
+  --bg: #ffffff;
+  --panel: #f6f7f9;
+  --text: #111827;
+  --muted: #6b7280;
+  --border: #d9dde3;
+  --accent: #0f766e;
+  --accent-soft: #e0f2ef;
+  --danger: #dc2626;
+  --danger-soft: #fdecec;
+  --ok: #16a34a;
+  --ok-soft: #e7f6ec;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17191d;
+    --panel: #22252b;
+    --text: #e8eaed;
+    --muted: #9aa0a6;
+    --border: #363a42;
+    --accent: #2dd4bf;
+    --accent-soft: #163330;
+    --danger: #f87171;
+    --danger-soft: #3a1f22;
+    --ok: #4ade80;
+    --ok-soft: #1a3324;
+  }
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  display: flex; flex-direction: column;
+  background: var(--bg);
+  color: var(--text);
+  font: 13px/1.4 system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+}
+button, select, input { font: inherit; color: var(--text); }
+.top {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 10px 14px; border-bottom: 1px solid var(--border);
+}
+.brand { display: flex; align-items: center; gap: 8px; font-weight: 650; font-size: 14px; white-space: nowrap; }
+.site { color: var(--muted); font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.banner, .toast { margin: 10px 14px 0; padding: 8px 10px; border-radius: 8px; font-size: 12px; word-break: break-word; }
+.banner { background: var(--danger-soft); color: var(--danger); }
+.toast { background: var(--ok-soft); color: var(--ok); }
+
+main { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 10px; padding: 10px 14px; }
+.row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.row.between { justify-content: space-between; }
+.field { display: flex; flex-direction: column; gap: 4px; }
+.field > label, .label { font-size: 11.5px; color: var(--muted); font-weight: 600; }
+input, select, button { height: 30px; padding: 0 8px; border: 1px solid var(--border); border-radius: 7px; background: var(--bg); }
+button { cursor: pointer; }
+button:hover { background: var(--panel); }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+button.primary:hover { background: var(--accent); filter: brightness(1.08); }
+button.icon { width: 30px; padding: 0; color: var(--muted); }
+input:focus, select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+#rows, .columns input.xp { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; }
+#rows { flex: 1; min-width: 0; }
+.count { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+.count.zero { background: var(--panel); color: var(--muted); }
+
+.columns { display: flex; flex-direction: column; gap: 4px; }
+.col { display: grid; grid-template-columns: 140px 1fr 30px; gap: 4px; }
+.col input { min-width: 0; }
+.col.bad input.xp { border-color: var(--danger); }
+
+.hint { margin: 0; color: var(--muted); font-size: 12px; }
+.err { margin: 0; color: var(--danger); font-size: 12px; }
+
+.results { flex: 1; min-height: 120px; overflow: auto; border: 1px solid var(--border); border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: 12px; }
+th, td { border-bottom: 1px solid var(--border); padding: 4px 8px; text-align: left; vertical-align: top;
+  max-width: 320px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+th { position: sticky; top: 0; background: var(--panel); font-weight: 600; }
+td.n, th.n { color: var(--muted); width: 1%; text-align: right; }
+.results .empty { padding: 12px; }
+
+.bottom { padding: 8px 14px; border-top: 1px solid var(--border); background: var(--panel); font-size: 11.5px; }
+.trust { color: var(--muted); }
+.trust::before { content: "🔒 "; }
+.picked { display: flex; align-items: center; gap: 6px; padding: 6px 8px; border-radius: 8px; background: var(--panel); }
+.picked code { flex: 1; min-width: 0; font-size: 12px; overflow-wrap: anywhere; }

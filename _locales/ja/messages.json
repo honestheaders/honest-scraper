@@ -1,0 +1,144 @@
+{
+  "extName": {
+    "message": "Honest Scraper – 似た要素を表に・XPath"
+  },
+  "extDescription": {
+    "message": "要素を1つ選ぶと、似た要素をまとめて表に。XPathの確認、スプレッドシートやCSVへのコピー。サイトへの常時アクセスなし、追跡なし、ソース公開。"
+  },
+  "menuScrapeSimilar": {
+    "message": "似た要素を表にする(Honest Scraper)"
+  },
+  "pick": {
+    "message": "要素を選ぶ"
+  },
+  "pickHint": {
+    "message": "ボタンを押してから、ページの項目をクリック。似た項目が行になります。"
+  },
+  "pickActive": {
+    "message": "ページの項目をクリックしてください。Escでやめます。"
+  },
+  "pickedLabel": {
+    "message": "XPath:"
+  },
+  "copy": {
+    "message": "コピー"
+  },
+  "copied": {
+    "message": "コピーしました。"
+  },
+  "copiedTsv": {
+    "message": "コピーしました。GoogleスプレッドシートやExcelに貼り付けできます。"
+  },
+  "rowsLabel": {
+    "message": "行(XPath)"
+  },
+  "rowsPlaceholder": {
+    "message": "//ul/li  や  //table//tr[td]"
+  },
+  "matches": {
+    "message": "$p1$ 件",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "columnsLabel": {
+    "message": "列(各行から見たXPath)"
+  },
+  "columnsHint": {
+    "message": "例: .(行の文字)  ./a/@href(リンク)  .//img/@src(画像)  ./td[2](2番目のセル)  normalize-space(.//h3)"
+  },
+  "addColumn": {
+    "message": "+ 列"
+  },
+  "removeColumn": {
+    "message": "列を消す"
+  },
+  "colName": {
+    "message": "名前"
+  },
+  "colXPath": {
+    "message": "XPath"
+  },
+  "scrape": {
+    "message": "取り出す"
+  },
+  "exportMenu": {
+    "message": "コピー・保存…"
+  },
+  "exportTsv": {
+    "message": "スプレッドシート/Excel用にコピー"
+  },
+  "exportCsv": {
+    "message": "CSVでコピー"
+  },
+  "exportJson": {
+    "message": "JSONでコピー"
+  },
+  "exportCsvFile": {
+    "message": "CSVファイルで保存"
+  },
+  "empty": {
+    "message": "まだ行がありません。要素を選ぶか、XPathを入れて「取り出す」を押してください。"
+  },
+  "rowsCount": {
+    "message": "$p1$ 行",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "rowsPreview": {
+    "message": "$p2$ 行のうち $p1$ 行を表示(コピー・保存は全部)",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      },
+      "p2": {
+        "content": "$2"
+      }
+    }
+  },
+  "rowsCapped": {
+    "message": "$p2$ 件のうち最初の $p1$ 件",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      },
+      "p2": {
+        "content": "$2"
+      }
+    }
+  },
+  "errXPath": {
+    "message": "XPathのエラー: $p1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "errColumns": {
+    "message": "列のXPathにエラーがあります(赤い欄)。その列は空になります。"
+  },
+  "errNoRows": {
+    "message": "先に行のXPathを入れるか、要素を選んでください。"
+  },
+  "errNothing": {
+    "message": "まだコピーするものがありません。先に「取り出す」を押してください。"
+  },
+  "errRestricted": {
+    "message": "このページはChromeの決まりで拡張機能から読めません(Chromeの設定画面やウェブストア)。ほかのサイトで使ってください。"
+  },
+  "errTabGone": {
+    "message": "タブが閉じられたか、変わりました。ページでHonest Scraperのアイコンをもう一度押してください。"
+  },
+  "errNoAccess": {
+    "message": "ページが変わったため、読む許可が終わりました。ページでHonest Scraperのアイコンをもう一度押してください。"
+  },
+  "trust": {
+    "message": "開いたタブだけを、押したときだけ読みます。データはブラウザの外に出ません。"
+  }
+}

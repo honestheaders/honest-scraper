@@ -1,0 +1,144 @@
+{
+  "extName": {
+    "message": "Honest Scraper – Scrape similar & XPath"
+  },
+  "extDescription": {
+    "message": "Pick an element, get every similar one as a table. Test XPath, copy to Sheets or CSV. No site access, no tracking, open source."
+  },
+  "menuScrapeSimilar": {
+    "message": "Scrape similar"
+  },
+  "pick": {
+    "message": "Pick an element"
+  },
+  "pickHint": {
+    "message": "Click the button, then click an item on the page. Similar items become rows."
+  },
+  "pickActive": {
+    "message": "Now click an item on the page. Press Esc to cancel."
+  },
+  "pickedLabel": {
+    "message": "XPath:"
+  },
+  "copy": {
+    "message": "Copy"
+  },
+  "copied": {
+    "message": "Copied."
+  },
+  "copiedTsv": {
+    "message": "Copied. Paste into Google Sheets or Excel."
+  },
+  "rowsLabel": {
+    "message": "Rows (XPath)"
+  },
+  "rowsPlaceholder": {
+    "message": "//ul/li  or  //table//tr[td]"
+  },
+  "matches": {
+    "message": "$p1$ matches",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "columnsLabel": {
+    "message": "Columns (XPath, relative to each row)"
+  },
+  "columnsHint": {
+    "message": "Examples: .  (row text)   ./a/@href  (link)   .//img/@src  (image)   ./td[2]  (2nd cell)   normalize-space(.//h3)"
+  },
+  "addColumn": {
+    "message": "+ Column"
+  },
+  "removeColumn": {
+    "message": "Remove column"
+  },
+  "colName": {
+    "message": "Name"
+  },
+  "colXPath": {
+    "message": "XPath"
+  },
+  "scrape": {
+    "message": "Scrape"
+  },
+  "exportMenu": {
+    "message": "Copy / save…"
+  },
+  "exportTsv": {
+    "message": "Copy for Sheets / Excel"
+  },
+  "exportCsv": {
+    "message": "Copy as CSV"
+  },
+  "exportJson": {
+    "message": "Copy as JSON"
+  },
+  "exportCsvFile": {
+    "message": "Save CSV file"
+  },
+  "empty": {
+    "message": "No rows yet. Pick an element, or type an XPath and press Scrape."
+  },
+  "rowsCount": {
+    "message": "$p1$ rows",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "rowsPreview": {
+    "message": "Showing $p1$ of $p2$ rows (copy/save includes all)",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      },
+      "p2": {
+        "content": "$2"
+      }
+    }
+  },
+  "rowsCapped": {
+    "message": "First $p1$ of $p2$ matches",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      },
+      "p2": {
+        "content": "$2"
+      }
+    }
+  },
+  "errXPath": {
+    "message": "XPath error: $p1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "errColumns": {
+    "message": "Some column XPaths have errors (marked red). Those cells are empty."
+  },
+  "errNoRows": {
+    "message": "Type a rows XPath or pick an element first."
+  },
+  "errNothing": {
+    "message": "Nothing to copy yet. Press Scrape first."
+  },
+  "errRestricted": {
+    "message": "Chrome does not let extensions read this page (Chrome pages and the Web Store). Try another site."
+  },
+  "errTabGone": {
+    "message": "The tab was closed or changed. Click the Honest Scraper icon on the page again."
+  },
+  "errNoAccess": {
+    "message": "Access ended because the page changed. Click the Honest Scraper icon on the page again."
+  },
+  "trust": {
+    "message": "Reads only the tab you opened it from, only when you click. Nothing leaves your browser."
+  }
+}
