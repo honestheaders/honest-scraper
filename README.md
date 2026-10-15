@@ -3,6 +3,9 @@
 Pick one element on a page and get every similar one as a table. Test XPath expressions with a live match count.
 An open-source, Manifest V3 replacement for **Scraper** and **XPath Helper**, which disappeared from the Chrome Web Store when Manifest V2 extensions were removed (August 2026).
 
+
+**Install:** [Honest Scraper on the Chrome Web Store](https://chromewebstore.google.com/detail/cjannokcnbkomcfalmhahpiffpkjbfla) (free). To try XPath without installing anything, use the [XPath tester](https://honestheaders.github.io/honest-guide/en/tools/xpath-tester/) (runs in your browser).
+
 - **Pick an element** (or right-click → *Scrape similar*): similar items become rows, and useful columns are suggested (text, link, image; table cells with their header names)
 - **Rows XPath box** with a live match count and on-page highlight, so it also works as an XPath tester
 - **Columns** are XPath relative to each row: `.`, `./a/@href`, `.//img/@src`, `./td[2]`, `normalize-space(.//h3)`
